@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1CE533321D79C89E000A387A /* DVRtvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CE533311D79C89E000A387A /* DVRtvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1CE533391D79C89E000A387A /* DVRtvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CE5332F1D79C89E000A387A /* DVRtvOS.framework */; };
+		1CE5333E1D79C89E000A387A /* DVRtvOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE5333D1D79C89E000A387A /* DVRtvOSTests.swift */; };
 		2119D3801BF6BB2700E91D6F /* multiple.json in Resources */ = {isa = PBXBuildFile; fileRef = 2119D37E1BF6BB2300E91D6F /* multiple.json */; };
 		2119D3811BF6BB2700E91D6F /* multiple.json in Resources */ = {isa = PBXBuildFile; fileRef = 2119D37E1BF6BB2300E91D6F /* multiple.json */; };
 		215F927D1B33D46C00EDC60F /* example.json in Resources */ = {isa = PBXBuildFile; fileRef = 215F927C1B33D46C00EDC60F /* example.json */; };
@@ -50,6 +53,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1CE5333A1D79C89E000A387A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3647AF921B335D5500EF10D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CE5332E1D79C89E000A387A;
+			remoteInfo = DVRtvOS;
+		};
 		3647AFA71B335D5500EF10D4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3647AF921B335D5500EF10D4 /* Project object */;
@@ -67,6 +77,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1CE5332F1D79C89E000A387A /* DVRtvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DVRtvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CE533311D79C89E000A387A /* DVRtvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVRtvOS.h; sourceTree = "<group>"; };
+		1CE533331D79C89E000A387A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CE533381D79C89E000A387A /* DVRtvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DVRtvOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CE5333D1D79C89E000A387A /* DVRtvOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DVRtvOSTests.swift; sourceTree = "<group>"; };
+		1CE5333F1D79C89E000A387A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2119D37E1BF6BB2300E91D6F /* multiple.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = multiple.json; sourceTree = "<group>"; };
 		215F927C1B33D46C00EDC60F /* example.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = example.json; sourceTree = "<group>"; };
 		21E548F11BF69E29004855AE /* text.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = text.json; sourceTree = "<group>"; };
@@ -95,6 +111,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1CE5332B1D79C89E000A387A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CE533351D79C89E000A387A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CE533391D79C89E000A387A /* DVRtvOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3647AF971B335D5500EF10D4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -128,10 +159,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1CE533301D79C89E000A387A /* DVRtvOS */ = {
+			isa = PBXGroup;
+			children = (
+				1CE533311D79C89E000A387A /* DVRtvOS.h */,
+				1CE533331D79C89E000A387A /* Info.plist */,
+			);
+			path = DVRtvOS;
+			sourceTree = "<group>";
+		};
+		1CE5333C1D79C89E000A387A /* DVRtvOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				1CE5333D1D79C89E000A387A /* DVRtvOSTests.swift */,
+				1CE5333F1D79C89E000A387A /* Info.plist */,
+			);
+			path = DVRtvOSTests;
+			sourceTree = "<group>";
+		};
 		3647AF911B335D5500EF10D4 = {
 			isa = PBXGroup;
 			children = (
 				3647AF9D1B335D5500EF10D4 /* DVR */,
+				1CE533301D79C89E000A387A /* DVRtvOS */,
+				1CE5333C1D79C89E000A387A /* DVRtvOSTests */,
 				3647AF9C1B335D5500EF10D4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -143,6 +194,8 @@
 				3647AFA51B335D5500EF10D4 /* DVRTests-iOS.xctest */,
 				3690A07B1B33AA3B00731222 /* DVR.framework */,
 				3690A0841B33AA3C00731222 /* DVRTests-OSX.xctest */,
+				1CE5332F1D79C89E000A387A /* DVRtvOS.framework */,
+				1CE533381D79C89E000A387A /* DVRtvOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -203,6 +256,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		1CE5332C1D79C89E000A387A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CE533321D79C89E000A387A /* DVRtvOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3647AF981B335D5500EF10D4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -222,6 +283,42 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		1CE5332E1D79C89E000A387A /* DVRtvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CE533441D79C89E000A387A /* Build configuration list for PBXNativeTarget "DVRtvOS" */;
+			buildPhases = (
+				1CE5332A1D79C89E000A387A /* Sources */,
+				1CE5332B1D79C89E000A387A /* Frameworks */,
+				1CE5332C1D79C89E000A387A /* Headers */,
+				1CE5332D1D79C89E000A387A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DVRtvOS;
+			productName = DVRtvOS;
+			productReference = 1CE5332F1D79C89E000A387A /* DVRtvOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1CE533371D79C89E000A387A /* DVRtvOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CE533451D79C89E000A387A /* Build configuration list for PBXNativeTarget "DVRtvOSTests" */;
+			buildPhases = (
+				1CE533341D79C89E000A387A /* Sources */,
+				1CE533351D79C89E000A387A /* Frameworks */,
+				1CE533361D79C89E000A387A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1CE5333B1D79C89E000A387A /* PBXTargetDependency */,
+			);
+			name = DVRtvOSTests;
+			productName = DVRtvOSTests;
+			productReference = 1CE533381D79C89E000A387A /* DVRtvOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		3647AF9A1B335D5500EF10D4 /* DVR-iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3647AFAF1B335D5500EF10D4 /* Build configuration list for PBXNativeTarget "DVR-iOS" */;
@@ -300,10 +397,16 @@
 		3647AF921B335D5500EF10D4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0700;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = Venmo;
 				TargetAttributes = {
+					1CE5332E1D79C89E000A387A = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					1CE533371D79C89E000A387A = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
 					3647AF9A1B335D5500EF10D4 = {
 						CreatedOnToolsVersion = 7.0;
 					};
@@ -334,11 +437,27 @@
 				3647AFA41B335D5500EF10D4 /* DVRTests-iOS */,
 				3690A07A1B33AA3B00731222 /* DVR-OSX */,
 				3690A0831B33AA3C00731222 /* DVRTests-OSX */,
+				1CE5332E1D79C89E000A387A /* DVRtvOS */,
+				1CE533371D79C89E000A387A /* DVRtvOSTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1CE5332D1D79C89E000A387A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CE533361D79C89E000A387A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3647AF991B335D5500EF10D4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -384,6 +503,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1CE5332A1D79C89E000A387A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CE533341D79C89E000A387A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CE5333E1D79C89E000A387A /* DVRtvOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3647AF961B335D5500EF10D4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -437,6 +571,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		1CE5333B1D79C89E000A387A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1CE5332E1D79C89E000A387A /* DVRtvOS */;
+			targetProxy = 1CE5333A1D79C89E000A387A /* PBXContainerItemProxy */;
+		};
 		3647AFA81B335D5500EF10D4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3647AF9A1B335D5500EF10D4 /* DVR-iOS */;
@@ -450,6 +589,72 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		1CE533401D79C89E000A387A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DVRtvOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.venmo.DVR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		1CE533411D79C89E000A387A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DVRtvOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.venmo.DVR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		1CE533421D79C89E000A387A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = DVRtvOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = undabot.DVRtvOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Debug;
+		};
+		1CE533431D79C89E000A387A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = DVRtvOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = undabot.DVRtvOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Release;
+		};
 		3647AFAD1B335D5500EF10D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -667,6 +872,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1CE533441D79C89E000A387A /* Build configuration list for PBXNativeTarget "DVRtvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CE533401D79C89E000A387A /* Debug */,
+				1CE533411D79C89E000A387A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1CE533451D79C89E000A387A /* Build configuration list for PBXNativeTarget "DVRtvOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CE533421D79C89E000A387A /* Debug */,
+				1CE533431D79C89E000A387A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		3647AF951B335D5500EF10D4 /* Build configuration list for PBXProject "DVR" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
